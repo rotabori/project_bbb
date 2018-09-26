@@ -1,0 +1,64 @@
+% ----------------------------------------------------------------
+% Letter ---------------------------------------------------------
+% ----------------------------------------------------------------
+\documentclass[12pt,letter]{letter}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+
+% ----------------------------------------------------------------
+
+\setlength{\voffset}{-1in}          % Reset the top margin back to zero
+\setlength{\hoffset}{-1in}          % Reset the left margin to zero
+\setlength{\topmargin}{1.0cm}       % Top margin
+\setlength{\oddsidemargin}{3cm}   % Odd side left margin to 30mm
+\setlength{\evensidemargin}{3cm}  % Even side left margin to 30mm
+\setlength{\textwidth}{15.5cm}  % Text width to be 16.9cm (an letter page
+                                % is 15.5cm+3cm+3cm=21.5cm wide)
+\setlength{\textheight}{23.7cm} % Text height to be 21.7cm (an letter
+                                % page is 21.7cm+3cm+3cm=27.9cm long)
+                                % HOJA TAMANO CARTA 21.6 X 27.9
+
+\signature{\includegraphics[width=2cm,angle=90]{C:/rodrigo/firma01.eps}\\
+\textbf{Rodrigo Taborda}}
+\address{% Return Address
+  {Facultad de Economía}\\
+  {Universidad del Rosario}\\
+  {Bogotá}\\
+  {\footnotesize{E-mail: \emph{rodrigo.taborda@urosario.edu.co}}}\\
+  {\footnotesize{Teléfono: 2970200 Ext. 696}}
+}
+
+%\makelabels
+
+\pagestyle{empty}
+
+\begin{document}
+% ----------------------------------------------------------------
+  \linespread{1} \selectfont                             %Set the spacing in the article
+
+\begin{letter}{ % Addressee
+    \textbf{El destinatario fantasma} \\
+    Facultad de Econom\'ia\\
+    Universidad del Rosario\\
+    Bogot\'a}
+
+\opening{Apreciado Doctor DelTecho}
+
+    Mediante esta comunicaci\'on \dots.
+
+    A la fecha cumplo \dots.
+
+    \begin{enumerate}
+      \item Lo primero.
+      \item Lo segundo.
+    \end{enumerate}
+
+\closing{Cordialmente,}
+
+\ \\
+
+\end{letter}
+% ----------------------------------------------------------------
+\end{document}
+% ----------------------------------------------------------------

@@ -1,0 +1,306 @@
+\documentclass{article}
+    \setcounter{secnumdepth}{4}
+    \setcounter{tocdepth}{4}
+    \usepackage{placeins}
+        %Package to  prevent floats from crossing a barrier (green book)
+    \usepackage{booktabs}
+    \usepackage{multirow} %Package to have multiple rows in tables green book
+
+    \usepackage{array} %Table features
+
+    \usepackage{lscape} %Landscape float
+
+    \usepackage{rotating,longtable}  %Package for long tables
+
+    \usepackage{natbib}
+
+\usepackage{graphics} % Standard graphics package
+\usepackage{epsfig}   % Enable PS and EPS graphics in latex
+
+
+
+    \begin{document}
+
+    \title{Un articulo sin ortografia\thanks{Este documento es resultado de 5 anos de trabajo.}}
+    \author{Rodrigo Taborda\thanks{Muchas gracias a todos.}\\
+            Universidad del Rosario
+            \and
+            Hugo Chavez\\
+            Mi mejor amigo}
+    \date{\today}
+
+    \maketitle
+
+    \begin{abstract}
+        \noindent \small Este es el resumen. Este es el resumen. Este es el resumen. Estaes\-unapalabramuylargaquelatexnopuedepartirbien. Este es el resumen. Este es el resumen. Este es el resumen. Este es el resumen. Este es el resumen. Este es el resumen. Este es el resumen.
+
+        \noindent \textbf{Palabras clave}: Yo, usted, nosotros.
+
+        \noindent \textbf{Clasificacion}: dd, yy, oo.
+    \end{abstract}
+
+    \newpage
+    \tableofcontents
+
+    \newpage
+    \FloatBarrier
+    \section*{Introduccion}\label{sec.intro}
+        \addcontentsline{toc}{section}{Introduccion}
+
+        \begin{figure}[t]
+        \centering
+        \includegraphics[width=0.5\textwidth,angle=0]
+            {C:/rodrigo/UR/proyecto_cursolatex/text/figures/world01.eps}
+            \caption{Un avion.}
+        \label{fig:figura}
+        \end{figure}
+
+        \begin{figure}[t]
+        \centering
+        \includegraphics[width=0.3\textwidth,angle=0]
+            {C:/rodrigo/UR/proyecto_cursolatex/text/garabato01.eps}
+            \caption{Un avion.}
+        \label{fig:figura}
+        \end{figure}
+
+        Esta es la introduccion, de un articulo que no tiene ortografia porque nunca aprendi.
+
+    \section{Explicacion a la introduccion}\label{sec.intro.explicacion}
+
+        Esta es la introduccion, sin ortografia.
+
+    \subsection{No se entiend nada}\label{ssec.intro.explicacion.noseentiende}
+
+        Esta parte del texto no se entiende. En la seccion \ref{sec.intro.explicacion} se explica.
+
+    \subsubsection{No se entiende nada}\label{ssec.intro.explicacion.noseentiende}
+
+        Esta parte del texto no se entiende. En la seccion \ref{sec.intro.explicacion} se explica.
+
+\begin{landscape}
+    \begin{table}[t]
+    \centering
+        \begin{tabular}{>{\small}r r r r r r}
+        \hline
+        \multicolumn{2}{c}{Camisas} & \multicolumn{2}{c}{Pantalones} & \multicolumn{2}{c}{Zapatos} \\
+        \cmidrule(rl){1-2} \cmidrule(rl){3-4} \cmidrule(rl){5-6}
+        a     & b     & c     & d     & f     & g \\
+        \hline
+    \multirow{2}{*}{Cali} & 1123   & 1123   & 1123   & 1123 & 1123 \\
+                          & 1123   & 1123   & 1123   & 1123 & 1123 \\
+    1123   & 1123   & 1123   & 1123   & 1123   & 1123 \\
+    1123   & 1123   & 1123   & 1123   & 1123   & 1123 \\
+    1123   & 1123   & 1123   & 1123   & 1123   & 1123 \\
+    1123   & 1123   & 1123   & 1123   & 1123   & 1123 \\
+    1123   & 1123   & 1123   & 1123   & 1123   & 1123 \\
+        \hline
+        \multicolumn{6}{p{0.50\textwidth}}{\emph{Nota}: No entendi la
+tabla.No entendi la tabla.No entendi la tabla.No entendi la tabla.No entendi la tabla.}
+        \end{tabular}
+    \caption[Triunfador]{Triunfador en la vida}
+    \label{tab:news.description}
+    \end{table}
+\end{landscape}
+
+    \renewcommand\arraystretch{0.8}
+    \begin{table}[t]
+    \centering
+        \begin{tabular}{>{\tiny}r >{\tiny}r >{\tiny}r >{\tiny}r >{\tiny}r >{\tiny}r}
+        \hline
+        \multicolumn{2}{c}{Camisas} & \multicolumn{2}{c}{Pantalones} & \multicolumn{2}{c}{Zapatos} \\
+        \cmidrule(rl){1-2} \cmidrule(rl){3-4} \cmidrule(rl){5-6}
+        a     & b     & c     & d     & f     & g \\
+        \hline
+    \multirow{2}{*}{Cali} & 1123   & 1123   & 1123   & 1123 & 1123 \\
+                          & 1123   & 1123   & 1123   & 1123 & 1123 \\
+    1123   & 1123   & 1123   & 1123   & 1123   & 1123 \\
+    1123   & 1123   & 1123   & 1123   & 1123   & 1123 \\
+    1123   & 1123   & 1123   & 1123   & 1123   & 1123 \\
+    1123   & 1123   & 1123   & 1123   & 1123   & 1123 \\
+    1123   & 1123   & 1123   & 1123   & 1123   & 1123 \\
+        \hline
+        \multicolumn{6}{p{0.50\textwidth}}{\emph{Nota}: No entendi la
+tabla.No entendi la tabla.No entendi la tabla.No entendi la tabla.No entendi la tabla.}
+        \end{tabular}
+    \caption[Triunfador]{Triunfador en la vida}
+    \label{tab:news.description}
+    \end{table}
+
+    \paragraph{No se entiende nada}\label{ssec.intro.explicacion.noseentiende}
+
+        Esta parte del texto no se entiende. En la seccion \ref{sec.intro.explicacion} se explica.
+
+    \renewcommand\arraystretch{0.9}
+    \begin{landscape}
+    \centering
+    \begin{longtable}{>{\small}l
+                      >{\small}c
+                      >{\small}c
+                      >{\small}c
+                      >{\small}c
+                      >{\small}c
+                      >{\small}c
+                      >{\small}c
+                      >{\small}c
+                      >{\small}c
+                      >{\small}c
+                      >{\small}c}
+    \caption[Correlation of variables]{Correlation of variables}\\
+    \endfirsthead
+    \endhead
+    \hline
+    \multicolumn{12}{r}{\footnotesize \emph{Continued on next page}}
+    \endfoot
+    \hline
+    \multicolumn{12}{p{1.2\textwidth}}{\footnotesize{\emph{Note}: IF stands for Intra Firm, II for Intra Industry, WC for White Collar and BC for Blue Collar. All variables in natural logarithm.}}\\
+    \multicolumn{12}{p{1.2\textwidth}}{\footnotesize{\emph{Source}: YoYoMa.}}
+    \endlastfoot
+
+    \multicolumn{2}{c}{\small 1981-90} &  &  &  &  &  &  &  &  &  &  \\*
+    \hline
+    & & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8) & (9) \\
+
+    Relative kkk & (1) & 1 & & & & & & & & \\
+    Share of output exported & (2) & -0.134 & 1 & & & & & & & \\
+    Tech. Acquisition & (3) & 0.0451 & -0.0271 & 1 & & & & & & \\
+    IF Wage diff & (4) & 0.1034 & -0.0235 & 0.017 & 1 & & & & & \\
+    II Wage diff (WC) & (5) & 0.4566 & -0.1212 & 0.0414 & 0.611 & 1 & & & & \\
+    II Wage diff (BC) & (6) & 0.4541 & -0.1531 & 0.0288 & -0.2321 & 0.6086 & 1 & & & \\
+    Output share industry & (7) & 0.5275 & -0.1661 & 0.0927 & 0.1004 & 0.4868 & 0.4968 & 1 & & \\
+    Advertising & (8) & 0.0104 & -0.2495 & -0.0633 & 0.0632 & 0.0567 & 0.0354 & 0.0106 & 1 & \\
+    Age & (9) & 0.1718 & -0.1344 & -0.0066 & 0.0723 & 0.2391 & 0.247 & 0.3087 & 0.0629 & 1 \\
+    Relative kkk & (1) & 1 & & & & & & & & \\
+    Share of output exported & (2) & -0.134 & 1 & & & & & & & \\
+    Tech. Acquisition & (3) & 0.0451 & -0.0271 & 1 & & & & & & \\
+    IF Wage diff & (4) & 0.1034 & -0.0235 & 0.017 & 1 & & & & & \\
+    II Wage diff (WC) & (5) & 0.4566 & -0.1212 & 0.0414 & 0.611 & 1 & & & & \\
+    II Wage diff (BC) & (6) & 0.4541 & -0.1531 & 0.0288 & -0.2321 & 0.6086 & 1 & & & \\
+    Output share industry & (7) & 0.5275 & -0.1661 & 0.0927 & 0.1004 & 0.4868 & 0.4968 & 1 & & \\
+    Advertising & (8) & 0.0104 & -0.2495 & -0.0633 & 0.0632 & 0.0567 & 0.0354 & 0.0106 & 1 & \\
+    Age & (9) & 0.1718 & -0.1344 & -0.0066 & 0.0723 & 0.2391 & 0.247 & 0.3087 & 0.0629 & 1 \\
+    Relative kkk & (1) & 1 & & & & & & & & \\
+    Share of output exported & (2) & -0.134 & 1 & & & & & & & \\
+    Tech. Acquisition & (3) & 0.0451 & -0.0271 & 1 & & & & & & \\
+    IF Wage diff & (4) & 0.1034 & -0.0235 & 0.017 & 1 & & & & & \\
+    II Wage diff (WC) & (5) & 0.4566 & -0.1212 & 0.0414 & 0.611 & 1 & & & & \\
+    II Wage diff (BC) & (6) & 0.4541 & -0.1531 & 0.0288 & -0.2321 & 0.6086 & 1 & & & \\
+    Output share industry & (7) & 0.5275 & -0.1661 & 0.0927 & 0.1004 & 0.4868 & 0.4968 & 1 & & \\
+    Advertising & (8) & 0.0104 & -0.2495 & -0.0633 & 0.0632 & 0.0567 & 0.0354 & 0.0106 & 1 & \\
+    Age & (9) & 0.1718 & -0.1344 & -0.0066 & 0.0723 & 0.2391 & 0.247 & 0.3087 & 0.0629 & 1 \\
+    Relative kkk & (1) & 1 & & & & & & & & \\
+    Share of output exported & (2) & -0.134 & 1 & & & & & & & \\
+    Tech. Acquisition & (3) & 0.0451 & -0.0271 & 1 & & & & & & \\
+    IF Wage diff & (4) & 0.1034 & -0.0235 & 0.017 & 1 & & & & & \\
+    II Wage diff (WC) & (5) & 0.4566 & -0.1212 & 0.0414 & 0.611 & 1 & & & & \\
+    II Wage diff (BC) & (6) & 0.4541 & -0.1531 & 0.0288 & -0.2321 & 0.6086 & 1 & & & \\
+    Output share industry & (7) & 0.5275 & -0.1661 & 0.0927 & 0.1004 & 0.4868 & 0.4968 & 1 & & \\
+    Advertising & (8) & 0.0104 & -0.2495 & -0.0633 & 0.0632 & 0.0567 & 0.0354 & 0.0106 & 1 & \\
+    Age & (9) & 0.1718 & -0.1344 & -0.0066 & 0.0723 & 0.2391 & 0.247 & 0.3087 & 0.0629 & 1 \\
+    Relative kkk & (1) & 1 & & & & & & & & \\
+    Share of output exported & (2) & -0.134 & 1 & & & & & & & \\
+    Tech. Acquisition & (3) & 0.0451 & -0.0271 & 1 & & & & & & \\
+    IF Wage diff & (4) & 0.1034 & -0.0235 & 0.017 & 1 & & & & & \\
+    II Wage diff (WC) & (5) & 0.4566 & -0.1212 & 0.0414 & 0.611 & 1 & & & & \\
+    II Wage diff (BC) & (6) & 0.4541 & -0.1531 & 0.0288 & -0.2321 & 0.6086 & 1 & & & \\
+    Output share industry & (7) & 0.5275 & -0.1661 & 0.0927 & 0.1004 & 0.4868 & 0.4968 & 1 & & \\
+    Advertising & (8) & 0.0104 & -0.2495 & -0.0633 & 0.0632 & 0.0567 & 0.0354 & 0.0106 & 1 & \\
+    Age & (9) & 0.1718 & -0.1344 & -0.0066 & 0.0723 & 0.2391 & 0.247 & 0.3087 & 0.0629 & 1 \\
+\label{tab:correlation.matrix}
+\end{longtable}
+\end{landscape}
+
+
+    \begin{longtable}{l
+                      c
+                      c
+                      c}
+    \caption{Tabla de letras}\\
+    \hline
+    Primer letra & Segunda letra & Tercera letra & Cuarta letra \\
+    \hline
+    \endfirsthead
+
+    \multicolumn{4}{r}{Esta tabla viene de la tabla anterior}\\
+    \hline
+    Primer letra & Segunda letra & Tercera letra & Cuarta letra \\
+    \hline
+    \endhead
+
+    \hline
+    \multicolumn{4}{r}{\footnotesize \emph{Como la tabla es tan larga sigue a la siguiente pagina}}
+    \endfoot
+
+    \hline
+    \multicolumn{4}{p{1\textwidth}}{\footnotesize{\emph{Note}: IF stands for Intra Firm, II for Intra Industry, WC for White Collar and BC for Blue Collar. All variables in natural logarithm.}}\\
+    \multicolumn{4}{p{1\textwidth}}{\footnotesize{\emph{Source}: YoYoMa.}}
+    \endlastfoot
+
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+    a & b & c & d \\
+\end{longtable}
+
+\cite{taborda2030}
+
+\bibliographystyle{C:/rodrigo/UR/proyecto_cursolatex/xxx/chicago}
+\bibliography{cursolatexbib}
+
+
+    \end{document} 
