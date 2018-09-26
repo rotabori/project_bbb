@@ -1,1 +1,1 @@
-project_bbb
+Curso LaTex para asistentes investigación, estudiantes programas maestría / doctorado y profesores de la Universidad de los Andes.
